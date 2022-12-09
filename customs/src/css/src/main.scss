@@ -1,0 +1,95 @@
+@import "components/_fonts.scss";
+
+/*sections*/
+@import "components/hero.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    //background-color: aqua;
+    padding: 20px 0px 20px 0px;
+    .header_content {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 70px;
+        @media screen and (max-width: 769px) {
+            padding-left: 25px;
+        }
+
+        .menu_left {
+            display: flex;
+            align-items: end;
+            z-index: 1;
+            .btn {
+                background: #29D6B4;
+                border: none;
+                border-radius: 100px;
+                padding: 10px 30px;
+                margin-right: 150px;
+                width: 170px;            
+                
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                cursor: pointer;
+                @media screen and (max-width: 769px) {
+                    margin-right: 0;
+                }
+            }
+
+            .burger {
+                display: none;
+                @media screen and (max-width: 769px) {
+                    display: block;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        
+        .logo {
+            width: 30%;
+            //background-color: red;
+            margin-left: 130px;
+            @media screen and (max-width: 1000px) {
+                margin: 0;
+            }
+            @media screen and (max-width: 440px) {
+                width: 200px;
+            }
+        }
+
+        #menu {
+            // background-color: green;
+             width: 40%;
+             z-index: 1;
+             ul {
+                 display: flex;
+                 align-items: center;
+                 width: 420px;
+                 li {
+                     font-weight: 500;
+                     font-size: 14px;
+                     line-height: 21px;
+ 
+                     a {
+                         color: #05262F;
+                     }
+                 }
+             }
+             @media screen and (max-width: 832px) {
+                 display: none;
+             }
+         }
+    }
+}
